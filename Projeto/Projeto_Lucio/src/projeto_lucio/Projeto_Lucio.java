@@ -24,5 +24,4 @@ public class Projeto_Lucio {
          tela.pack();
          tela.setLocationRelativeTo(null);
     }
-    
 }
