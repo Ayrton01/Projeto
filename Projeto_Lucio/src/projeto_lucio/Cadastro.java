@@ -266,10 +266,6 @@ public class Cadastro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenhaActionPerformed
-
-    }//GEN-LAST:event_SenhaActionPerformed
-
     private void cadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastroActionPerformed
 
         Tela_Login Login = new Tela_Login();
@@ -292,16 +288,20 @@ public class Cadastro extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_LoginActionPerformed
 
-    private void ClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClienteActionPerformed
-        // TODO add your handling code here:
-        Prestador_Serviços.setSelected(false);
-    }//GEN-LAST:event_ClienteActionPerformed
-
     private void Prestador_ServiçosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Prestador_ServiçosActionPerformed
         // TODO add your handling code here:
 
         Cliente.setSelected(false);
     }//GEN-LAST:event_Prestador_ServiçosActionPerformed
+
+    private void ClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClienteActionPerformed
+        // TODO add your handling code here:
+        Prestador_Serviços.setSelected(false);
+    }//GEN-LAST:event_ClienteActionPerformed
+
+    private void SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenhaActionPerformed
+
+    }//GEN-LAST:event_SenhaActionPerformed
 
     /**
      * @param args the command line arguments

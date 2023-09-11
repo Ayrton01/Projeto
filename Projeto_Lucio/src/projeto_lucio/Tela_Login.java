@@ -281,6 +281,10 @@ public class Tela_Login extends javax.swing.JFrame {
         
         if(Cliente.isSelected() == true) {
             
+            Conta_Cliente tela = new Conta_Cliente();
+            tela.setVisible(true);
+            this.setVisible(false);
+            
         }else if(Prestador_Serviços.isSelected() == true) {
             
         } else {
