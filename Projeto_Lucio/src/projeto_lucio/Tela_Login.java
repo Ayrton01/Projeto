@@ -102,9 +102,13 @@ public class Tela_Login extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Login");
 
-        Usuario.setBackground(new java.awt.Color(255, 255, 255));
         Usuario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Usuario.setForeground(new java.awt.Color(0, 0, 204));
+        Usuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UsuarioActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 51, 51));
@@ -116,7 +120,6 @@ public class Tela_Login extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel3.setText("Senha");
 
-        Senha.setBackground(new java.awt.Color(255, 255, 255));
         Senha.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         Senha.setForeground(new java.awt.Color(0, 0, 255));
         Senha.addActionListener(new java.awt.event.ActionListener() {
@@ -281,9 +284,23 @@ public class Tela_Login extends javax.swing.JFrame {
         
         if(Cliente.isSelected() == true) {
             
+            Conta_Cliente tela = new Conta_Cliente();
+            tela.setVisible(true);
+            this.setVisible(false);
+            tela.setExtendedState(6);
+            
         }else if(Prestador_Serviços.isSelected() == true) {
             
+            Conta_Prestador tela = new Conta_Prestador();
+            tela.setVisible(true);
+            this.setVisible(false);
+            tela.setExtendedState(6);
+            
         } else {
+            
+             JOptionPane.showMessageDialog(null, "Deve escolher qual conta criou no cadastro", "Aviso", JOptionPane.WARNING_MESSAGE);
+           return;
+            
             
         }
     }//GEN-LAST:event_LoginActionPerformed
@@ -298,6 +315,10 @@ public class Tela_Login extends javax.swing.JFrame {
         
         Cliente.setSelected(false);
     }//GEN-LAST:event_Prestador_ServiçosActionPerformed
+
+    private void UsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UsuarioActionPerformed
 
     /**
      * @param args the command line arguments
